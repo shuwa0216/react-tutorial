@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
 
-export default class App extends React.Component {
+export default class TicTacToe extends React.Component {
   render() {
     return (
       <div className="game">
@@ -76,10 +75,6 @@ class Board extends React.Component {
 }
 
 class Square extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <button className="square" onClick={this.props.onClick}>
